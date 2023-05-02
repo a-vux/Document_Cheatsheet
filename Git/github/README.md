@@ -95,3 +95,5 @@
 <p align="center">
     <img src="./src/checkout.png" style="width: 600px">
 </p>
+
+- `git merge <branch name>`
