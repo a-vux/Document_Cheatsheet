@@ -102,3 +102,6 @@
 </p>
 
 &lt;This line is added as an emergency line&gt;
+&lt;this line is created and committed in "new-branch" branch&gt;
+
+&lt;another line is created and committed in "new-branch" branch&gt;
