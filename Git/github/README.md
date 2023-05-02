@@ -26,7 +26,7 @@
 - Set username and email address:
     * `git config --global user.name = <username>`
     * `git config --global user.email = <email>`
-- Using `--global` let Git always use the given information for anything you do on the system. If you want to set them for ***just the current repo***, use the command without `--global`
+- Using `--global` let Git ***always use the given information*** for anything you do on the system. If you want to set them for ***just the current repo***, use the command without `--global`
 - `git config --list`: to check your ***configuration lists***
 ## *Common commands:*
 - `git --version`: to check ***which version*** of Git is installed
@@ -65,13 +65,6 @@
     <img src="./src/help.png" style="width: 600px">
 </p>
 
-- `git clone <URL>` to make a copy of the forked repo to your local computer
-<p align="center">
-    <img src="./src/clone.png" style="width: 600px">
-</p>
-
-- `git push`
-
 # **To add changes from your repo to the central repo:**
 - Use `pull request`
 - Head fork: the repo from which changes come
@@ -101,7 +94,10 @@
     <img src="./src/merge.png" style="width: 600px">
 </p>
 
-&lt;This line is added as an emergency line&gt;
-&lt;this line is created and committed in "new-branch" branch&gt;
+# **Github:**
+- `git clone <URL>` to make a copy of the forked repo to your local computer
+<p align="center">
+    <img src="./src/clone.png" style="width: 600px">
+</p>
 
-&lt;another line is created and committed in "new-branch" branch&gt;
+- `git push`
