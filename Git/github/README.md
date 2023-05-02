@@ -91,7 +91,7 @@
     * You should also be aware that branch name ***should not include blank spaces***
     * Notice that the ***asterisk at the beginning of branch name*** (here, the `main` branch) indicates that ***we are working on that branch***
 - `git branch -d <branch name>`: to delete a specified branch
-- `git checkout <branch name>`: to ***switch branch***, from the current branch the the branch specified
+- `git checkout <branch name>`: to ***switch branch***, from the current branch the the branch specified. To move to an uncreated branch (or to create a new branch and move to it rightaway), use `git checkout -b <branch name>`
 <p align="center">
     <img src="./src/checkout.png" style="width: 600px">
 </p>
