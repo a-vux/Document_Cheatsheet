@@ -7,7 +7,8 @@
 # **Some terms:**
 - *Central repository* : a repository where all participants add their changes to. It is known as the "final working version" of the project
 - *Forked repository* : a personal working copy of the central repository stored in your Github account (also called a ***fork***)
-- *Local/Cloned repository* : a local version of your fork on your computer
+- *Local/Cloned repository* : a local version of your fork on your computer. It is simply a folder/directory
+- *Staging Environment*: this is where files are added and ready to be committed to the repository. Files here are called ***staged files***
 
 # **To fork a repo in Github:**
 <p align="center">
@@ -38,12 +39,29 @@
 - `git init`: to initialize Git on the current folder. Since then, Git will watch the folder by creating a ***hidden folder*** (`.git`) to ***keep track of changes***
 - `git pull <URL>`: to pull changes in the forked repo on Github to your computer to ensure both repos are in sync
 - `git status`: to ***check if any changes occured*** in the current repo
+    <p align="center">
+        <img src="./src/status.png" style="width: 600px">
+    </p>
+
+    ❗We can use `--short flag` to see the changes in ***a clearer way***:
+    <p align="center">
+        <img src="./src/status2.png" style="width: 600px">
+    </p>
+
+    * `??` - untracked files
+    * `A` - files added to stage
+    * `M` - modified files
+    * `D` - deleted files
+
+- `git add <file>`: to add file to the ***Staging Environment***. If you want to ***add all files***, use `git add .` or `git add -all` or `git add -A`
 <p align="center">
-    <img src="./src/status.png" style="width: 600px">
+    <img src="./src/add.png" style="width: 600px">
 </p>
 
-- `git add`
-- `git commit`
+- `git commit -m <message>`: to ***perform a commit***, meaning the ***staging environment*** is commited to ***our repo***. Each commit is considered ***change point***, or ***save point*** to be familiar. Every commit should always include a ***message***
+
+    ❗Sometimes, we can ***skip the staging process*** in case of only small changes made by using `-a` flag. Though, it is not generally recommended
+- `git log`: to view the history of commits for the repo
 - `git push`
 
 # **To add changes from your repo to the central repo:**
