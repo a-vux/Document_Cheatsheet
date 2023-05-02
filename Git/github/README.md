@@ -96,4 +96,7 @@
     <img src="./src/checkout.png" style="width: 600px">
 </p>
 
-- `git merge <branch name>`
+- `git merge <branch name>`: to ***merge*** the current branch with the specified branch
+<p align="center">
+    <img src="./src/merge.png" style="width: 600px">
+</p>
