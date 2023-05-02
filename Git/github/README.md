@@ -21,12 +21,6 @@
 - Note that the name of the forked repo ***can be changed and still connected*** to the central repo
 - Forked repo is useful as a backup of the central repo, and also allows you to edit/update changes without modifying the original one
 
-# **To clone a repo:**
-- Use `git clone <URL>` to make a copy of the forked repo to your local computer
-<p align="center">
-    <img src="./src/clone.png" style="width: 600px">
-</p>
-
 # **Some commands:**
 ## *First-time Git setup:*
 - Set username and email address:
@@ -60,11 +54,43 @@
 
 - `git commit -m <message>`: to ***perform a commit***, meaning the ***staging environment*** is commited to ***our repo***. Each commit is considered ***change point***, or ***save point*** to be familiar. Every commit should always include a ***message***
 
-    ❗Sometimes, we can ***skip the staging process*** in case of only small changes made by using `-a` flag. Though, it is not generally recommended
+    ❗Sometimes, we can ***skip the staging process*** in case of only small changes made by using `-a` flag. This means you don't need to add files to the staging environment by "git add". Though, it is not generally recommended
 - `git log`: to view the history of commits for the repo
+<p align="center">
+    <img src="./src/log.png" style="width: 600px">
+</p>
+
+- `git help --all`: to see ***all the commands*** and theirs function. However, use `git <command> -help` to see ***all the available options/flags*** for the specified command
+<p align="center">
+    <img src="./src/help.png" style="width: 600px">
+</p>
+
+- `git clone <URL>` to make a copy of the forked repo to your local computer
+<p align="center">
+    <img src="./src/clone.png" style="width: 600px">
+</p>
+
 - `git push`
 
 # **To add changes from your repo to the central repo:**
 - Use `pull request`
 - Head fork: the repo from which changes come
 - Base fork: the repo that to which changes will be added
+
+# **Branch:**
+- Branches allow you to work on ***different parts*** of a project ***without interfering the main branch***
+- Branches can be ***merged*** with the main project
+- Switching between branches to work on different projects
+
+## *Some commands on branches:* 
+- `git branch <branch name>`: to create a new branch. If we don't specify any name, it will display all the branches
+    <p align="center">
+        <img src="./src/branch.png" style="width: 600px">
+    </p>
+
+    * You should also be aware that branch name ***should not include blank spaces***
+    * Notice that the ***asterisk at the beginning of branch name*** (here, the `main` branch) indicates that ***we are working on that branch***
+- `git checkout <branch name>`: to ***switch branch***, from the current branch the the branch specified
+<p align="center">
+    <img src="./src/checkout.png" style="width: 600px">
+</p>
